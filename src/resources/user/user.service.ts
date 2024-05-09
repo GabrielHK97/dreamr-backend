@@ -113,7 +113,8 @@ export class UserService {
         (sum, time) => sum + toSeconds(time),
         0,
       );
-      const averageSeconds = totalSeconds / sleepTimes.length;
+      const averageSeconds = sleepTimes.length > 0 ?  totalSeconds / sleepTimes.length : totalSeconds;
+
 
       const hours = Math.floor(averageSeconds / 3600);
       const minutes = Math.floor((averageSeconds % 3600) / 60);
