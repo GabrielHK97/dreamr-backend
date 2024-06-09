@@ -46,6 +46,7 @@ export class UserService {
       createUserDto.name &&
       createUserDto.birthDate &&
       createUserDto.sex &&
+      createUserDto.height &&
       createUserDto.username &&
       createUserDto.password &&
       createUserDto.confirmPassword
